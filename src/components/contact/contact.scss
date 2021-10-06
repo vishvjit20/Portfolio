@@ -1,3 +1,32 @@
+@import "../../global.scss";
+
 .contact {
-  background-color: lightblue;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 227px;
+    width: 100vw;
+  }
 }

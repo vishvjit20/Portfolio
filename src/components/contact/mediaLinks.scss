@@ -1,0 +1,16 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  div {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  a {
+    text-transform: none;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}

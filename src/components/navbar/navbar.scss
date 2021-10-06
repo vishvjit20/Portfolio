@@ -1,8 +1,73 @@
+@import "../../global.scss";
 .navbar {
-  background-color: aqua;
+  background-color: #ffffff;
+  color: $mainColor;
   width: 100%;
   height: 70px;
   top: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
+  transition: 1s ease;
+
+  .wrapper {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      .logo {
+        font-size: 32px;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+        margin-right: 20px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+    }
+
+    .right {
+      .hamburger {
+        width: 32px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+
+        span {
+          width: 100%;
+          height: 3px;
+          background-color: black;
+          transform-origin: left;
+          transition: all 2s ease;
+        }
+      }
+    }
+  }
+
+  &.active {
+    background-color: crimson;
+    color: #ffffff;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: #ffffff;
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:last-child {
+          background-color: #ffffff;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
 }

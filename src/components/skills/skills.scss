@@ -1,0 +1,34 @@
+@import "../../global.scss";
+
+.skills {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include mobile {
+    justify-content: space-around;
+  }
+
+  h1 {
+    font-size: 50px;
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  .container {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include mobile {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+}

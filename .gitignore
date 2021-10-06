@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+data.js
+animation
 /.pnp
 .pnp.js
 
