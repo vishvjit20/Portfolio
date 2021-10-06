@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: #ffffff;
+  background-color: $primaryColor;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -25,7 +25,7 @@
   .footer {
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color: $secondaryColor;
     height: 227px;
     width: 100vw;
   }

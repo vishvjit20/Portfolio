@@ -1,6 +1,6 @@
 @import "../../global.scss";
 .navbar {
-  background-color: #ffffff;
+  background-color: $primaryColor;
   color: $mainColor;
   width: 100%;
   height: 70px;
@@ -40,7 +40,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: black;
+          background-color: $secondaryColor;
           transform-origin: left;
           transition: all 2s ease;
         }
@@ -49,13 +49,13 @@
   }
 
   &.active {
-    background-color: crimson;
-    color: #ffffff;
+    background-color: $mainColor;
+    color: $primaryColor;
 
     .hamburger {
       span {
         &:first-child {
-          background-color: #ffffff;
+          background-color: $primaryColor;
           transform: rotate(45deg);
         }
 
@@ -64,7 +64,7 @@
         }
 
         &:last-child {
-          background-color: #ffffff;
+          background-color: $primaryColor;
           transform: rotate(-45deg);
         }
       }

@@ -12,7 +12,7 @@ const Education = ({
   city,
 }) => {
   return (
-    <Card className="education">
+    <Card className="edu">
       <div className="institute">
         {branch ? (
           <GiGraduateCap className="icon" />

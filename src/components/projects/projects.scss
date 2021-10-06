@@ -1,14 +1,14 @@
 @import "../../global.scss";
 
 .projects {
-  background-color: crimson;
+  background-color: $mainColor;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 
   .heading {
-    color: #ffffff;
+    color: $primaryColor;
     font-size: 40px;
     position: absolute;
     top: 0;
@@ -58,7 +58,7 @@
       .item {
         width: 700px;
         height: 100%;
-        background-color: #ffffff;
+        background-color: $primaryColor;
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -123,7 +123,7 @@
                 height: 30px;
                 width: 30px;
                 margin: auto;
-                color: crimson;
+                color: $mainColor;
                 cursor: pointer;
 
                 &:last-child {

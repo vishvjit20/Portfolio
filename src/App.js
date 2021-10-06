@@ -2,7 +2,7 @@ import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import Menu from "./components/menu/Menu";
 import Navbar from "./components/navbar/Navbar";
-import Portfolio from "./components/educationDetails/EducationDetails";
+import EducationDetails from "./components/education/EducationDetails";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
@@ -18,7 +18,7 @@ const App = () => {
       <div className="sections">
         <Intro />
         <About />
-        <Portfolio />
+        <EducationDetails />
         <Projects />
         <Skills />
         <Contact />

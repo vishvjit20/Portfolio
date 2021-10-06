@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .education {
-  background-color: #ffffff;
+  background-color: $primaryColor;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +47,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #ffffff;
+      color: $primaryColor;
       position: relative;
       transition: all 0.5s ease;
       cursor: pointer;

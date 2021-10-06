@@ -1,17 +1,12 @@
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./educationdetails.scss";
 import { useState, useEffect } from "react";
-import { highSchool, graduation, seniorSecondary } from "../../data";
-import Education from "../education/Education";
+import { highSchool, graduation, seniorSecondary, list } from "../../data";
+import Education from "./Education";
 
 const EducationDetails = () => {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
-  const list = [
-    { id: "grad", title: "Graduation" },
-    { id: "highschool", title: "High School" },
-    { id: "ssc", title: "Senior Seconday School" },
-  ];
 
   useEffect(() => {
     switch (selected) {
