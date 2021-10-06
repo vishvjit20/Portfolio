@@ -8,10 +8,9 @@
   overflow: hidden;
 
   h1 {
-    font-size: 40px;
-    @include mobile {
-      font-size: 20px;
-    }
+    font-size: $primaryFont;
+    text-transform: capitalize;
+    text-align: center;
   }
 
   ul {

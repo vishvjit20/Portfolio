@@ -2,7 +2,7 @@ import "./projects.scss";
 import { useState } from "react";
 import { BiCodeAlt } from "react-icons/bi";
 import { DiCodeigniter } from "react-icons/di";
-import { projectdata } from "../../data";
+import { consts, projectdata } from "../../data";
 
 const Projects = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,7 +17,7 @@ const Projects = () => {
   };
   return (
     <div className="projects" id="projects">
-      <div className="heading">Projects</div>
+      <h1>{consts[2]}</h1>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}

@@ -1,13 +1,13 @@
+import { consts, contactData } from "../../data";
 import "./contact.scss";
 import ContactItem from "./ContactItem";
 import MediaLinks from "./MediaLinks";
 import Social from "./Social";
 
 const Contact = () => {
-  const contactData = ["singhvishwajeet1998@gmail.com", "+91-9584311671"];
   return (
     <div className="contact" id="contact">
-      <div className="heading">Contact Me</div>
+      <div className="heading">{consts[4]}</div>
       <div className="header">
         <ContactItem contact={contactData[1]} email={contactData[0]} />
       </div>

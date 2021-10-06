@@ -7,9 +7,10 @@
   justify-content: center;
   position: relative;
 
-  .heading {
+  h1 {
     color: $primaryColor;
-    font-size: 40px;
+    text-transform: capitalize;
+    font-size: $primaryFont;
     position: absolute;
     top: 0;
   }

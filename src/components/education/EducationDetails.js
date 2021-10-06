@@ -1,7 +1,13 @@
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./educationdetails.scss";
 import { useState, useEffect } from "react";
-import { highSchool, graduation, seniorSecondary, list } from "../../data";
+import {
+  highSchool,
+  graduation,
+  seniorSecondary,
+  list,
+  consts,
+} from "../../data";
 import Education from "./Education";
 
 const EducationDetails = () => {
@@ -25,7 +31,7 @@ const EducationDetails = () => {
   }, [selected]);
   return (
     <div className="education" id="education">
-      <h1>Education Background</h1>
+      <h1>{consts[1]}</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList

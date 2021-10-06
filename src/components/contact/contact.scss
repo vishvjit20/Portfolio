@@ -11,6 +11,7 @@
 
   .heading {
     font-size: 40px;
+    text-transform: capitalize;
     font-weight: 500;
     display: flex;
     margin: 0 auto;
@@ -24,8 +25,10 @@
 
   .footer {
     display: flex;
+    position: absolute;
     justify-content: space-around;
     background-color: $secondaryColor;
+    bottom: 0;
     height: 227px;
     width: 100vw;
   }

@@ -1,10 +1,11 @@
+import { consts } from "../../data";
 import Item from "./Item";
 import "./skills.scss";
 
 const skills = () => {
   return (
     <div className="skills" id="skills">
-      <h1>Skills</h1>
+      <h1>{consts[3]}</h1>
       <div className="container">
         <Item name="html" />
         <Item name="css" />

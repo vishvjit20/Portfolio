@@ -4,6 +4,7 @@ import fileSaver from "file-saver";
 import { MdWork } from "react-icons/md";
 import { HiLocationMarker } from "react-icons/hi";
 import { BsFillPersonBadgeFill, BsPersonBoundingBox } from "react-icons/bs";
+import { consts } from "../../data";
 
 const About = () => {
   const btnClickHandler = () => {
@@ -21,7 +22,7 @@ const About = () => {
       </div>
       <div className="right">
         <div className="heading">
-          <h3>About Me</h3>
+          <h3>{consts[0]}</h3>
         </div>
         <div className="about-me">
           <ul>
