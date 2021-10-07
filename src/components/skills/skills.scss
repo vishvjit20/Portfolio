@@ -5,18 +5,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 
   @include mobile {
     justify-content: space-around;
-  }
-
-  h1 {
-    font-size: 50px;
-    text-transform: capitalize;
-
-    @include mobile {
-      font-size: 20px;
-    }
   }
 
   .container {

@@ -1,0 +1,22 @@
+@import "../../global.scss";
+
+.link {
+  a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: $secondaryColor;
+    font-size: 20px;
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.active {
+  background-color: $mainColor;
+  border-radius: 5px;
+  a {
+    color: $primaryColor !important;
+  }
+}

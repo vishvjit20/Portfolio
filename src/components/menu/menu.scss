@@ -1,11 +1,11 @@
 @import "../../global.scss";
 .menu {
-  width: 300px;
+  width: 100vw;
   height: 100vh;
   background-color: $mainColor;
   position: fixed;
   top: 0;
-  right: -300px;
+  right: -100vw;
   z-index: 2;
   display: flex;
   align-items: center;
@@ -20,6 +20,7 @@
   ul {
     margin: 0;
     padding: 0;
+    margin-left: 30vw;
     list-style: none;
     font-size: 30px;
     font-weight: 300;

@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 .app {
   height: 100vh;
   .sections {
@@ -16,6 +18,17 @@
       width: 100vw;
       height: calc(100vh - 70px);
       scroll-snap-align: start;
+    }
+
+    .heading {
+      font-size: 40px;
+      font-weight: 500;
+      text-transform: capitalize;
+      text-align: center;
+      overflow: hidden;
+      @include mobile {
+        font-size: 30px;
+      }
     }
   }
 }

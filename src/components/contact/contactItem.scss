@@ -1,19 +1,31 @@
+@import "../../global.scss";
+
 .contact-item {
   height: 300px;
   width: 500px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   margin: 20px;
 
   div {
     display: flex;
     align-items: center;
+    flex-direction: column;
+
+    @include mobile {
+      font-size: 14px;
+    }
     .icon {
-      height: 20px;
-      width: 20px;
+      height: 25px;
+      width: 25px;
       margin-right: 10px;
+      color: $mainColor;
+      @include mobile {
+        height: 30px;
+        width: 30px;
+      }
     }
   }
 }

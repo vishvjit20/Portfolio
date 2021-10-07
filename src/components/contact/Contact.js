@@ -9,7 +9,11 @@ const Contact = () => {
     <div className="contact" id="contact">
       <div className="heading">{consts[4]}</div>
       <div className="header">
-        <ContactItem contact={contactData[1]} email={contactData[0]} />
+        <ContactItem
+          contact={contactData[1]}
+          email={contactData[0]}
+          linkedin={contactData[2]}
+        />
       </div>
       <div className="footer">
         <Social />

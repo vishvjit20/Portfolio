@@ -1,4 +1,4 @@
-import PortfolioList from "../portfolioList/PortfolioList";
+import PortfolioList from "./EducationList";
 import "./educationdetails.scss";
 import { useState, useEffect } from "react";
 import {
@@ -31,7 +31,7 @@ const EducationDetails = () => {
   }, [selected]);
   return (
     <div className="education" id="education">
-      <h1>{consts[1]}</h1>
+      <div className="heading">{consts[1]}</div>
       <ul>
         {list.map((item) => (
           <PortfolioList

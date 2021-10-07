@@ -4,7 +4,7 @@ import fileSaver from "file-saver";
 import { MdWork } from "react-icons/md";
 import { HiLocationMarker } from "react-icons/hi";
 import { BsFillPersonBadgeFill, BsPersonBoundingBox } from "react-icons/bs";
-import { consts } from "../../data";
+import { consts, myData } from "../../data";
 
 const About = () => {
   const btnClickHandler = () => {
@@ -13,6 +13,14 @@ const About = () => {
       "my_cv.pdf"
     );
   };
+
+  const icons = [
+    <BsPersonBoundingBox />,
+    <MdWork />,
+    <BsFillPersonBadgeFill />,
+    <HiLocationMarker />,
+  ];
+
   return (
     <div className="about" id="about">
       <div className="left">
@@ -26,22 +34,13 @@ const About = () => {
         </div>
         <div className="about-me">
           <ul>
-            <li>
-              <BsPersonBoundingBox />
-              &nbsp;&nbsp;&nbsp;&nbsp; Vishwajeet Singh Kushwah
-            </li>
-            <li>
-              <MdWork />
-              &nbsp;&nbsp;&nbsp;&nbsp;Tata Consultancy Services
-            </li>
-            <li>
-              <BsFillPersonBadgeFill />
-              &nbsp;&nbsp;&nbsp;&nbsp;Assistant System Engineer - Trainee
-            </li>
-            <li>
-              <HiLocationMarker />
-              &nbsp;&nbsp;&nbsp;&nbsp;Pune, Maharashtra
-            </li>
+            {icons.map((icon, idx) => {
+              return (
+                <li>
+                  {icon}&nbsp;&nbsp;&nbsp;&nbsp;{myData[idx]}
+                </li>
+              );
+            })}
           </ul>
         </div>
         <button onClick={btnClickHandler}>Download CV</button>

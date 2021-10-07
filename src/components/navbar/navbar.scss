@@ -29,13 +29,29 @@
     }
 
     .right {
+      display: flex;
+      .link {
+        a {
+          text-decoration: none;
+          margin: 0 10px;
+          color: $secondaryColor;
+          font-size: 20px;
+
+          @include mobile {
+            display: none;
+          }
+        }
+      }
       .hamburger {
-        width: 32px;
-        height: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
+        display: none;
+        @include mobile {
+          width: 32px;
+          height: 25px;
+          display: flex;
+          cursor: pointer;
+          flex-direction: column;
+          justify-content: space-between;
+        }
 
         span {
           width: 100%;

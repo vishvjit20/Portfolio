@@ -3,6 +3,7 @@ import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import { BiChevronsDown } from "react-icons/bi";
 import Stars from "../animation/Stars";
+import { interests, introData } from "../../data";
 
 const Intro = () => {
   const textref = useRef();
@@ -12,11 +13,7 @@ const Intro = () => {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: [
-        "Frontend Development",
-        "Backend Development",
-        "Problem Solving",
-      ],
+      strings: interests,
     });
   }, []);
 
@@ -24,9 +21,9 @@ const Intro = () => {
     <div className="intro" id="intro">
       <Stars />
       <div className="wrapper">
-        <h2>Hey there, I'm</h2>
-        <h1>Vishwajeet</h1>
-        <h3>I'm interested in</h3>
+        {introData.map((data) => (
+          <>{data}</>
+        ))}
         <h3>
           <span ref={textref}></span>
         </h3>

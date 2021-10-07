@@ -6,11 +6,10 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 
-  h1 {
+  .h1 {
     color: $primaryColor;
-    text-transform: capitalize;
-    font-size: $primaryFont;
     position: absolute;
     top: 0;
   }
