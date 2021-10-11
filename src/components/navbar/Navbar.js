@@ -1,10 +1,9 @@
 import { links } from "../../data";
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import NavbarList from "./NavbarList";
 import "./navbar.scss";
 const Navbar = ({ menuOpen, setMenuOpen, id, stateChange }) => {
   const [selected, setSelected] = useState();
-
   return (
     <div className={"navbar " + (menuOpen && "active")}>
       <div className="wrapper">

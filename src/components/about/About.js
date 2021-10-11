@@ -29,7 +29,7 @@ const About = () => {
         </div>
       </div>
       <div className="right">
-        <div className="heading">
+        <div className="heading2">
           <h3>{consts[0]}</h3>
         </div>
         <div className="about-me">
