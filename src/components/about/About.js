@@ -5,6 +5,7 @@ import { MdWork } from "react-icons/md";
 import { HiLocationMarker } from "react-icons/hi";
 import { BsFillPersonBadgeFill, BsPersonBoundingBox } from "react-icons/bs";
 import { consts, myData } from "../../data";
+// import img from "../../assets/man.jpg";
 
 const About = () => {
   const btnClickHandler = () => {
@@ -25,7 +26,7 @@ const About = () => {
     <div className="about" id="about">
       <div className="left">
         <div className="imgContainer">
-          <img src="/assets/man.jpg" alt="" />
+          <img src={`${process.env.PUBLIC_URL}/assets/man.jpg`} alt="" />
         </div>
       </div>
       <div className="right">

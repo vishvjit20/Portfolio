@@ -4,7 +4,7 @@ const Item = ({ name }) => {
   let path = "/assets/";
   return (
     <div className="skill-path">
-      <img src={`${path}/${name}.png`} alt="" />
+      <img src={`${process.env.PUBLIC_URL}${path}${name}.png`} alt="" />
     </div>
   );
 };
