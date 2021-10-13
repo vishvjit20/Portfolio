@@ -22,7 +22,7 @@ const Projects = () => {
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
-        {projectdata.map((item) => (
+        {projectdata.map((item, idx) => (
           <div className="container">
             <div className="item">
               <div className="left">
@@ -44,20 +44,23 @@ const Projects = () => {
                 </div>
               </div>
               <div className="right">
-                <img src={item.img} alt="" />
+                <img
+                  src={`${process.env.PUBLIC_URL}/assets/p${idx + 1}.jpg`}
+                  alt=""
+                />
               </div>
             </div>
           </div>
         ))}
       </div>
       <img
-        src="assets/arrow.png"
+        src={`${process.env.PUBLIC_URL}/assets/arrow.png`}
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/arrow.png"
+        src={`${process.env.PUBLIC_URL}/assets/arrow.png`}
         className="arrow right"
         alt=""
         onClick={() => handleClick()}
